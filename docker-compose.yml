@@ -1,0 +1,29 @@
+# This is a Docker Compose file that defines two services, a mysql database and an application that runs python script.
+version: "3"
+services:
+# Define the database service.
+    db:
+        # Set a custom name for the container running the database.
+        container_name: tesla_resi
+        # Use the official MySQL Docker image version 5.7.
+        image: mysql:5.7
+        # Map port 3306 inside the container to port 32001 on the host.
+        ports:
+            - "32001:3306"
+        environment:
+        # Set the root password for the MySQL server.
+            MYSQL_ROOT_PASSWORD: root
+    app:
+        # Set a custom name for the container running the application.
+        container_name: myapp
+        # Create a network link between the app and db services.
+        links:
+            - "db"
+        # Build the app container using the Dockerfile in the current directory.
+        build: ./
+        # Load environment variables for the app container from a file called env.list.
+        env_file:
+            - env.list
+        # Map port 5000 inside the container to port 5001 on the host.
+        ports:
+            - "5001:5000"

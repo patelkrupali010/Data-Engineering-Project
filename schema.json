@@ -1,0 +1,467 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Generated schema for Root",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "number"
+      },
+      "installationId": {
+        "type": "number"
+      },
+      "siteModel": {
+        "type": "object",
+        "properties": {
+          "buildings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "mountingPlanes": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "number"
+                      },
+                      "area": {
+                        "type": "number"
+                      },
+                      "pitchAngle": {
+                        "type": "number"
+                      },
+                      "azimuthAngle": {
+                        "type": "number"
+                      },
+                      "azimuthVector": {
+                        "type": "object",
+                        "properties": {
+                          "x": {
+                            "type": "number"
+                          },
+                          "y": {
+                            "type": "number"
+                          },
+                          "z": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "x",
+                          "y",
+                          "z"
+                        ]
+                      },
+                      "roofMaterialType": {
+                        "type": "string"
+                      },
+                      "centroid": {
+                        "type": "object",
+                        "properties": {
+                          "x": {
+                            "type": "number"
+                          },
+                          "y": {
+                            "type": "number"
+                          },
+                          "z": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "x",
+                          "y",
+                          "z"
+                        ]
+                      },
+                      "coordinateSystem": {
+                        "type": "object",
+                        "properties": {
+                          "xAxis": {
+                            "type": "object",
+                            "properties": {
+                              "x": {
+                                "type": "number"
+                              },
+                              "y": {
+                                "type": "number"
+                              },
+                              "z": {
+                                "type": "number"
+                              }
+                            },
+                            "required": [
+                              "x",
+                              "y",
+                              "z"
+                            ]
+                          },
+                          "yAxis": {
+                            "type": "object",
+                            "properties": {
+                              "x": {
+                                "type": "number"
+                              },
+                              "y": {
+                                "type": "number"
+                              },
+                              "z": {
+                                "type": "number"
+                              }
+                            },
+                            "required": [
+                              "x",
+                              "y",
+                              "z"
+                            ]
+                          },
+                          "zAxis": {
+                            "type": "object",
+                            "properties": {
+                              "x": {
+                                "type": "number"
+                              },
+                              "y": {
+                                "type": "number"
+                              },
+                              "z": {
+                                "type": "number"
+                              }
+                            },
+                            "required": [
+                              "x",
+                              "y",
+                              "z"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "xAxis",
+                          "yAxis",
+                          "zAxis"
+                        ]
+                      },
+                      "polygon": {
+                        "type": "object",
+                        "properties": {
+                          "exteriorRing": {
+                            "type": "object",
+                            "properties": {
+                              "windingDirection": {},
+                              "edges": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "number"
+                                    },
+                                    "startPoint": {
+                                      "type": "object",
+                                      "properties": {
+                                        "x": {
+                                          "type": "number"
+                                        },
+                                        "y": {
+                                          "type": "number"
+                                        },
+                                        "z": {
+                                          "type": "number"
+                                        }
+                                      },
+                                      "required": [
+                                        "x",
+                                        "y",
+                                        "z"
+                                      ]
+                                    },
+                                    "endPoint": {
+                                      "type": "object",
+                                      "properties": {
+                                        "x": {
+                                          "type": "number"
+                                        },
+                                        "y": {
+                                          "type": "number"
+                                        },
+                                        "z": {
+                                          "type": "number"
+                                        }
+                                      },
+                                      "required": [
+                                        "x",
+                                        "y",
+                                        "z"
+                                      ]
+                                    },
+                                    "bearingVector": {},
+                                    "angleBetweenBearingVectorAndUpVector": {
+                                      "type": "number"
+                                    },
+                                    "angleBetweenBearingVectorAndRightVector": {
+                                      "type": "number"
+                                    },
+                                    "edgeCondition": {
+                                        "anyOf": [
+                                            {
+                                                "type": "string"
+                                            },
+                                            {
+                                                "type": "null"
+                                            }
+                                        ]
+                                    },
+                                    "sidingMaterial": {}
+                                  },
+                                  "required": [
+                                    "id",
+                                    "startPoint",
+                                    "endPoint",
+                                    "bearingVector",
+                                    "angleBetweenBearingVectorAndUpVector",
+                                    "angleBetweenBearingVectorAndRightVector",
+                                    "edgeCondition",
+                                    "sidingMaterial"
+                                  ]
+                                }
+                              }
+                            },
+                            "required": [
+                              "windingDirection",
+                              "edges"
+                            ]
+                          },
+                          "interiorRings": {
+                            "type": "array",
+                            "items": {}
+                          }
+                        },
+                        "required": [
+                          "exteriorRing",
+                          "interiorRings"
+                        ]
+                      },
+                      "obstructions": {},
+                      "penetrations": {}
+                    },
+                    "required": [
+                      "id",
+                      "area",
+                      "pitchAngle",
+                      "azimuthAngle",
+                      "azimuthVector",
+                      "roofMaterialType",
+                      "centroid",
+                      "coordinateSystem",
+                      "polygon",
+                      "obstructions",
+                      "penetrations"
+                    ]
+                  }
+                },
+                "isPrimaryBuilding": {
+                  "type": "boolean"
+                },
+                "totalRoofArea": {
+                  "type": "number"
+                },
+                "polygon": {
+                  "type": "object",
+                  "properties": {
+                    "exteriorRing": {
+                      "type": "object",
+                      "properties": {
+                        "windingDirection": {},
+                        "edges": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "number"
+                              },
+                              "startPoint": {
+                                "type": "object",
+                                "properties": {
+                                  "x": {
+                                    "type": "number"
+                                  },
+                                  "y": {
+                                    "type": "number"
+                                  },
+                                  "z": {
+                                    "type": "number"
+                                  }
+                                },
+                                "required": [
+                                  "x",
+                                  "y",
+                                  "z"
+                                ]
+                              },
+                              "endPoint": {
+                                "type": "object",
+                                "properties": {
+                                  "x": {
+                                    "type": "number"
+                                  },
+                                  "y": {
+                                    "type": "number"
+                                  },
+                                  "z": {
+                                    "type": "number"
+                                  }
+                                },
+                                "required": [
+                                  "x",
+                                  "y",
+                                  "z"
+                                ]
+                              },
+                              "bearingVector": {},
+                              "angleBetweenBearingVectorAndUpVector": {
+                                "type": "number"
+                              },
+                              "angleBetweenBearingVectorAndRightVector": {
+                                "type": "number"
+                              },
+                              "edgeCondition": {
+                                "anyOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "null"
+                                    }
+                                ]
+                              },
+                              "sidingMaterial": {}
+                            },
+                            "required": [
+                              "id",
+                              "startPoint",
+                              "endPoint",
+                              "bearingVector",
+                              "angleBetweenBearingVectorAndUpVector",
+                              "angleBetweenBearingVectorAndRightVector",
+                              "edgeCondition",
+                              "sidingMaterial"
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "windingDirection",
+                        "edges"
+                      ]
+                    },
+                    "interiorRings": {
+                      "type": "array",
+                      "items": {}
+                    }
+                  },
+                  "required": [
+                    "exteriorRing",
+                    "interiorRings"
+                  ]
+                }
+              },
+              "required": [
+                "mountingPlanes",
+                "isPrimaryBuilding",
+                "totalRoofArea",
+                "polygon"
+              ]
+            }
+          },
+          "units": {
+            "type": "object",
+            "properties": {
+              "length": {
+                "type": "string"
+              },
+              "angle": {
+                "type": "string"
+              },
+              "area": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "length",
+              "angle",
+              "area"
+            ]
+          },
+          "northVector": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number"
+              },
+              "y": {
+                "type": "number"
+              },
+              "z": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "x",
+              "y",
+              "z"
+            ]
+          },
+          "headingVector": {
+            "type": "object",
+            "properties": {
+              "x": {
+                "type": "number"
+              },
+              "y": {
+                "type": "number"
+              },
+              "z": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "x",
+              "y",
+              "z"
+            ]
+          },
+          "version": {
+            "type": "string"
+          },
+          "obstructions": {}
+        },
+        "required": [
+          "buildings",
+          "units",
+          "northVector",
+          "headingVector",
+          "version",
+          "obstructions"
+        ]
+      },
+      "dateCreated": {
+        "type": "string"
+      },
+      "version": {
+        "type": "string"
+      },
+      "externalSiteModelSourceId": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "id",
+      "installationId",
+      "siteModel",
+      "dateCreated",
+      "version",
+      "externalSiteModelSourceId"
+    ]
+  }
