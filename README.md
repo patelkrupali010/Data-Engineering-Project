@@ -34,9 +34,11 @@ combination of id, installationId as its primary key.
 
 Analyst:
 
-image.png
+![image](https://github.com/patelkrupali010/Data-Engineering-Project/assets/91221231/67f00f73-aed0-4ed9-9add-aaaa1c7922d8)
 
-image.png
+
+![image](https://github.com/patelkrupali010/Data-Engineering-Project/assets/91221231/9e5275e8-f7a1-4f45-bad0-6a89414f609e)
+
 
 Data Scientist: They can leverage the following columns from the tables created for feature engineering of roof properties:
 
@@ -78,6 +80,9 @@ While examining the JSON files and running validations in python script, I had i
 3. Roof_6.json has a misspelled field – mountingPlanes
 
 Setup:
-image.png
-image.png
-image.png
+![image](https://github.com/patelkrupali010/Data-Engineering-Project/assets/91221231/b676e1de-0ea5-490f-b57f-7546ce9fd37a)
+
+![image](https://github.com/patelkrupali010/Data-Engineering-Project/assets/91221231/2be54680-4789-44c3-babf-d94decce78a2)
+
+![image](https://github.com/patelkrupali010/Data-Engineering-Project/assets/91221231/19d4d777-5219-4971-9c5a-aa352d511438)
+
