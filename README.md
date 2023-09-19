@@ -7,7 +7,8 @@
 
 Data Pipeline Architecture:
 
-image.png
+![image](https://github.com/patelkrupali010/Data-Engineering-Project/assets/91221231/af40e84f-6203-4688-91ab-35d8d0c8bf92)
+
 
 JSON files are dumped into AWS S3 bucket, containerized through Docker by running dockerfile via a bash script, orchestrated through Airflow and finally loaded to MySQL Datawarehouse tables and aggregated data is processed using Presto engine which can be used by all consumers like Data Analysts, Data Scientists and Software Engineering team.
 
